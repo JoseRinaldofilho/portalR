@@ -6,10 +6,8 @@
 <ul>
   <% @articles.each do |article| %>
   <li>
-    <a href="/articles/<%= article.id %>">
-   <%= article.title %> <br />
-<!--    mensagem:  <%#= article.body %>-->
-    </a>
+      <%= link_to article.title, article %>
+
   </li>
   <% end %>
 </ul>
